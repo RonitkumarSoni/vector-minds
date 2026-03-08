@@ -170,7 +170,7 @@ function Dashboard({ setTab }) {
           {/* Mini stats */}
           <div className="hero-mini-stats">
             {[
-              { val: '100+', lbl: 'Currencies', clr: 'var(--vl)' },
+              { val: '120+', lbl: 'Currencies', clr: 'var(--vl)' },
               { val: '0%', lbl: 'Fee', clr: 'var(--gl)' },
               { val: 'AI', lbl: 'Insights', clr: 'var(--al)' },
               { val: '3s', lbl: 'Updates', clr: 'var(--c)' },
