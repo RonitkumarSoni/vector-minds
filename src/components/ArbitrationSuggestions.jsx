@@ -103,7 +103,7 @@ export default function ArbitrationSuggestions() {
                 </div>
             </div>
 
-            <div style={{
+            <div className="arb-table-header" style={{
                 display: 'grid', gridTemplateColumns: 'minmax(30px, auto) minmax(130px, 1fr) 2fr minmax(100px, 1fr) minmax(60px, auto) minmax(60px, auto)',
                 gap: 16, padding: '0 12px 12px',
                 borderBottom: '1px solid rgba(255,255,255,.08)',
@@ -111,10 +111,10 @@ export default function ArbitrationSuggestions() {
             }}>
                 <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px' }}>Rank</span>
                 <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px' }}>Asset</span>
-                <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px' }}>Yield Efficiency</span>
+                <span className="hide-mobile" style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px' }}>Yield Efficiency</span>
                 <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px', textAlign: 'right' }}>Net USD</span>
-                <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px', textAlign: 'right' }}>Tax/Fee</span>
-                <span style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px', textAlign: 'right' }}>Delta</span>
+                <span className="hide-mobile" style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px', textAlign: 'right' }}>Tax/Fee</span>
+                <span className="hide-mobile" style={{ fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', fontWeight: 800, letterSpacing: '1px', textAlign: 'right' }}>Delta</span>
             </div>
 
             <div style={{
@@ -133,6 +133,7 @@ export default function ArbitrationSuggestions() {
                     return (
                         <motion.div
                             key={item.currency}
+                            className="arb-table-row"
                             style={{
                                 display: 'grid',
                                 gridTemplateColumns: 'minmax(30px, auto) minmax(130px, 1fr) 2fr minmax(100px, 1fr) minmax(60px, auto) minmax(60px, auto)',
@@ -168,7 +169,7 @@ export default function ArbitrationSuggestions() {
                                 </div>
                             </div>
 
-                            <div style={{ height: 6, background: 'rgba(255,255,255,.04)', borderRadius: 4, overflow: 'hidden' }}>
+                            <div className="hide-mobile" style={{ height: 6, background: 'rgba(255,255,255,.04)', borderRadius: 4, overflow: 'hidden' }}>
                                 <motion.div
                                     style={{ height: '100%', borderRadius: 4, background: BAR_COLORS[i % BAR_COLORS.length], boxShadow: '0 0 10px rgba(255,255,255,0.2)' }}
                                     initial={{ width: 0 }}
@@ -183,11 +184,11 @@ export default function ArbitrationSuggestions() {
                                 </div>
                             </div>
 
-                            <div style={{ textAlign: 'right', fontSize: '0.85rem', fontWeight: 800, color: FEE_COLOR(item.spreadPct) }}>
+                            <div className="hide-mobile" style={{ textAlign: 'right', fontSize: '0.85rem', fontWeight: 800, color: FEE_COLOR(item.spreadPct) }}>
                                 -{item.spreadPct}%
                             </div>
 
-                            <div style={{ textAlign: 'right', fontSize: '0.8rem', fontWeight: 800, fontFamily: 'var(--mono)' }}>
+                            <div className="hide-mobile" style={{ textAlign: 'right', fontSize: '0.8rem', fontWeight: 800, fontFamily: 'var(--mono)' }}>
                                 {isBest
                                     ? <span style={{ color: '#34d399', fontSize: '0.7rem', fontWeight: 900, letterSpacing: '.05em', background: 'rgba(52, 211, 153, 0.2)', padding: '2px 6px', borderRadius: 6 }}>BEST</span>
                                     : <span style={{ color: '#ef4444' }}>{vsBest}%</span>

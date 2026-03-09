@@ -13,7 +13,7 @@ export default function CurrencyConverter() {
         { id: 1, from: 'USD', to: 'EUR', amt: 1000, result: 924.50, date: new Date(Date.now() - 3600000) },
         { id: 2, from: 'GBP', to: 'INR', amt: 500, result: 52430.10, date: new Date(Date.now() - 7200000) }
     ]);
-    
+
 
     const numAmt = amt === '' || isNaN(Number(amt)) ? 0 : Number(amt);
     const result = convert(numAmt, from, to);
@@ -52,7 +52,7 @@ export default function CurrencyConverter() {
     const trendColor = trendUp ? '#10b981' : '#ef4444';
 
     return (
-        <div style={{ maxWidth: 1150, margin: '0 auto', fontFamily: 'var(--sans, sans-serif)', padding: '10px' }}>
+        <div className="conv-container" style={{ margin: '0 auto', fontFamily: 'var(--sans, sans-serif)', padding: '10px' }}>
             <style>{`
                 @keyframes pulse-ring {
                     0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
@@ -87,11 +87,11 @@ export default function CurrencyConverter() {
                 }
             `}</style>
 
-            <div className="conv-grid" style={{ gap: 24, alignItems: 'stretch' }}>
+            <div className="conv-grid">
 
                 <motion.div
                     initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ type: 'spring', damping: 20 }}
-                    className="glass-card" style={{ padding: 40, display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}
+                    className="glass-card conv-main-card" style={{ display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}
                 >
                     <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40%', height: '40%', background: 'radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%)', filter: 'blur(40px)', zIndex: 0 }} />
                     <div style={{ position: 'absolute', bottom: '-10%', right: '-10%', width: '40%', height: '40%', background: 'radial-gradient(circle, rgba(56,189,248,0.2) 0%, transparent 70%)', filter: 'blur(40px)', zIndex: 0 }} />
@@ -211,7 +211,7 @@ export default function CurrencyConverter() {
                                     exit={{ opacity: 0, y: -20 }}
                                     transition={{ type: "spring", stiffness: 100 }}
                                     style={{
-                                        fontSize: '4.5rem', fontWeight: 900, color: '#f0f9ff',
+                                        fontSize: 'var(--conv-res-fs, 4.5rem)', fontWeight: 900, color: '#f0f9ff',
                                         fontFamily: 'var(--mono)', lineHeight: 1.1, animation: 'glow 3s infinite',
                                         wordBreak: 'break-word'
                                     }}

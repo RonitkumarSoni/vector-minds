@@ -37,7 +37,7 @@ export default function DashboardCards({ getHistory }) {
     ];
 
     return (
-        <div className="dashboard-cards-grid" style={{ gap: 20 }}>
+        <div className="dashboard-cards-grid">
             {LIVE_CARDS.map((c, i) => (
                 <motion.div
                     key={i}

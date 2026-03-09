@@ -213,7 +213,7 @@ function Dashboard({ setTab }) {
       </motion.div>
 
       <motion.div variants={child} style={{ marginBottom: 40 }}>
-        <div className="features-grid" style={{ gap: 14 }}>
+        <div className="features-grid">
           <FeatureCard icon={<Globe size={22} color="var(--bl)" />} title="Converter" desc="Multi-currency live conversion with quick amounts" tab="converter" clr="var(--bl)" bg="rgba(37,99,235,.12)" onClick={() => setTab('converter')} />
           <FeatureCard icon={<TrendingUp size={22} color="var(--gl)" />} title="Analytics" desc="Exchange rate charts & AI trend forecasts" tab="analytics" clr="var(--gl)" bg="rgba(5,150,105,.12)" onClick={() => setTab('analytics')} />
           <FeatureCard icon={<PlayCircle size={22} color="var(--c)" />} title="Simulator" desc="Model earnings across 10+ currency scenarios" tab="simulator" clr="var(--c)" bg="rgba(6,182,212,.12)" onClick={() => setTab('simulator')} />

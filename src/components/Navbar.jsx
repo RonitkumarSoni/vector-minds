@@ -349,7 +349,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onEditProfile, o
                                 >
                                     <div className="profile-avatar">
                                         {user?.avatar
-                                            ? <img src={user.avatar} alt={initials} />
+                                            ? <img src={user.avatar} alt={initials} referrerPolicy="no-referrer" />
                                             : (
                                                 <div style={{
                                                     width: 28, height: 28, borderRadius: '50%',
@@ -385,7 +385,7 @@ export default function Navbar({ activeTab, setActiveTab, user, onEditProfile, o
                                                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                                                     fontSize: '.875rem', fontWeight: 800, color: '#fff',
                                                 }}>
-                                                    {user?.avatar ? <img src={user.avatar} style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }} alt="" /> : initials}
+                                                    {user?.avatar ? <img src={user.avatar} style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }} alt="" referrerPolicy="no-referrer" /> : initials}
                                                 </div>
                                                 <div>
                                                     <div style={{ fontWeight: 700, fontSize: '.875rem', color: 'var(--t1)' }}>{user?.name || 'User'}</div>

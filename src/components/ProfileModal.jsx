@@ -95,7 +95,7 @@ export default function ProfileModal({ user, onSave, onLogout, onClose }) {
                                 onClick={() => setShowAvatarMenu(m => !m)}
                             >
                                 {avatar
-                                    ? <img src={avatar} alt="avatar" className="prf-avatar-img" />
+                                    ? <img src={avatar} alt="avatar" className="prf-avatar-img" referrerPolicy="no-referrer" />
                                     : (
                                         <div className="prf-avatar-placeholder">
                                             <span className="prf-avatar-initials">{initials}</span>
