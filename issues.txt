@@ -1,0 +1,24 @@
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\server\server.js:41 'error' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\App.jsx:3 'ShieldCheck' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\App.jsx:47 'tab' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ArbitrationSuggestions.jsx:3 'Trophy' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ArbitrationSuggestions.jsx:3 'Info' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ArbitrationSuggestions.jsx:3 'TrendingDown' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\CurrencyConverter.jsx:2 'CheckCircle2' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\CurrencyConverter.jsx:16 'autoRefresh' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\CurrencyConverter.jsx:16 'setAutoRefresh' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\DashboardCards.jsx:5 'getRate' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\EarningsSimulator.jsx:12 'meta' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\LoginPage.jsx:3 'Sparkles' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\PerformanceStats.jsx:3 'Play' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\PerformanceStats.jsx:29 React Hook useEffect has missing dependencies: 'finishTest' and 'typed'. Either include them or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\PlatformFeeBreakdown.jsx:2 'ArrowRight' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ProfileModal.jsx:13 'showAvatarMenu' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ProfitPrediction.jsx:7 'convert' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:3 'Keyboard' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:28 React Hook useCallback has a missing dependency: 'input'. Either include it or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:38 React Hook useEffect has missing dependencies: 'finishTest' and 'input'. Either include them or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\hooks\useAIAssistant.js:60 'msgLower' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\hooks\useAIAssistant.js:195 React Hook useCallback has an unnecessary dependency: 'rates'. Either exclude it or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\hooks\useExchangeRates.js:1 'useRef' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\hooks\useExchangeRates.js:113 'err' is defined but never used.

@@ -1,0 +1,5 @@
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\ProfitPrediction.jsx:7 'convert' is assigned a value but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:3 'Keyboard' is defined but never used.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:28 React Hook useCallback has a missing dependency: 'input'. Either include it or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\components\TypingTest.jsx:38 React Hook useEffect has missing dependencies: 'finishTest' and 'input'. Either include them or remove the dependency array.
+C:\Users\Abdul haque\OneDrive\Desktop\Hackthone\freelance-marketplace\src\hooks\useAIAssistant.js:51 'rates' is assigned a value but never used.
